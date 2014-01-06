@@ -1,0 +1,37 @@
+<html>
+<!--Created by Karina Chan, Evelyn Lee, and Nina Broocks (05/08/13)-->
+	<head>
+                <title>Wellesley Events</title>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<script type="text/javascript" src="../../datetime.js"></script>
+	</head>
+	<body>
+	<div class="block1">
+        <p>
+	<a href="http://cs.wellesley.edu/~spamalot/cgi-bin/finalproj/submit_event.html">Submit an Event</a>
+        
+        <div id="dateDiv">
+        <!--Automatic Date/Time (datetime.js) will be displayed here. "dateDiv" div is used to change its 
+        style -->
+        </div>
+        </p>
+	<h1> <a href="http://cs.wellesley.edu/~spamalot/cgi-bin/finalproj/newwe.cgi" title="Refresh"> Wellesley Spam</a></h1> 
+        
+	<p> The spam displayed is organized by date. The keyname search below only searches for key words within the event's name.
+	<br><br>
+	Send us feedback at spamalotken@gmail.com! 
+	<form method="get" action="http://cs.wellesley.edu/~spamalot/cgi-bin/finalproj/newwe.cgi" name="search_form">
+
+  	<p>Keyname Search: <input type="text" name="keysearch">
+   
+
+  	<p><input type="submit" value="Search" name="request">
+     <input type="reset">
+	</form>
+        </div>
+	
+	<p> {eventlistings} </p> 
+	
+	</body> 
+
+</html> 

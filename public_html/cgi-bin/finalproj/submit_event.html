@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<!--Created by Karina Chan, Evelyn Lee, and Nina Broocks (05/08/13)-->
+    <head>
+    <title>Submit an Event</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script type="text/javascript" src="../../form.js"> </script>
+    </head>
+    
+        <body>
+        <div class="block">
+        <p>
+        <a href="http://cs.wellesley.edu/~spamalot/cgi-bin/finalproj/newwe.cgi" title="Go Back"> Go back to Home </a>
+        </p>
+        <h1>Submit an  Event</h1>
+        <p>If you want an event deleted, please email us at spamalotken@gmail.com</p>
+
+      
+            <form method="post" enctype="multipart/form-data" action="http://cs.wellesley.edu/~spamalot/cgi-bin/finalproj/newwe.cgi" name="make_form">
+                <p><span id="name_asterisk" class="required">*</span>
+                Name of Event: <input type="text" name="eventName">
+                    </p>
+                <p><span id="org_asterisk" class="required">*</span>
+                Event Organizers: <input type="text" name="eventOrg">
+                    </p>
+                <p><span id="date_asterisk" class="required">*</span>
+                Date (i.e. 05/02/13): <input type="text" name="date">
+                    </p>
+                <p><span id="btime_asterisk" class="required">*</span>
+                Start Time: <input type="text" name="startTime">
+                    </p>
+                <p><span id="etime_asterisk" class="required">*</span>
+                End Time: <input type="text" name="endTime">
+                    </p>
+                <p><span id="place_asterisk" class="required">*</span>
+                Place: <input type="text" name="loc">
+                    </p>
+                <p><span id="desc_asterisk" class="required">*</span>
+                Event Description: <br>
+                    <textarea rows="5" cols="60" name="eventDes"></textarea>
+                    </p>
+                <p><span id="contact_asterisk" class="required">*</span>
+                Contact Info: <input type="text" name="contactInfo">
+                    </p>
+                <hr>
+                <h3>Upload the spam for the event</h3>
+                <p><input type="file" name="uploadedFile" size="30">
+                <!--<input type="submit" name="request" value="Upload">&nbsp;<em>{uploadFeedbackGoesHere}</em>--></p>
+                    </p><hr>
+
+            <input type="submit" value="submit" name="request" onClick= "return validateForm()">
+            <input type="reset" value="reset" onClick="resetForm()">
+
+
+            </form>
+        </div>
+                
+        </body>
+</html>
